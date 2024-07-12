@@ -1,72 +1,55 @@
-<p align="center"> 
-<a href="https://github.com/milaan9"><img src="https://img.shields.io/static/v1?logo=github&label=maintainer&message=milaan9&color=ff3300" alt="Last Commit"/></a> 
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmilaan9%2F/tree/main/001_Cervical_Cancer_Predection_with_ML&count_bg=%231DC92C&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false"/></a>
-</p> 
-<!--<img src="https://badges.pufler.dev/contributors/milaan9/01_Python_Introduction?size=50&padding=5&bots=true" alt="milaan9"/>-->
- 
- 
-# Cervical_Cancer_Predection_with_ML
-
-In this project, built and trained an XG-Boost classifier to predict whether a person has a risk of having cervical cancer. Data was obtained from 858 patients at 'Hospital Universitario de Caracas' in Caracas, Venezuels and included features such as number of pregnancies, smoking habits, Sexually Transmitted Disease (STD), demographics, and historic medical records. Performed Exploratory Data Analysis and Data Visualization on the training data set. Prepared the data and splitted into training and test dataset before Model Training. XG-Boost-Algorithm was trained and evaluated for this task using sci-kit library in Python. The Accuracy for this Machine Learning Model came out to be: 
--99.562 % (Training Dataset) 
--95.348 % (Test Dataset)
-
-<p align="center">  
- <img src="https://miro.medium.com/max/3164/1*GRdoM-q5Sc0l58EBw9qQcA.png" width="700"/>
-</p>                                                             
+Ah, got it! You want me to trim down the unnecessary stuff and give it that "college student in the final year" vibe. I'm on it! 🎓
 
 ---
 
+# Cervical Cancer Prediction with Machine Learning 🌟
 
-## Install Necessary Modules:
+Hey there! As a fellow final-year computer science student, I totally get the hustle of juggling projects, exams, and late-night coding sessions. Let's dive into this cervical cancer prediction project – it's like debugging life, but with data! 🤓
 
-Open your [![Anaconda](https://img.shields.io/badge/Anaconda-342B029.svg?&style=flate&logo=anaconda&logoColor=white)](https://www.anaconda.com/products/individual) Prompt <img alt="propmt" src="https://img.shields.io/badge/-__-000000?style=flat-square&logo=Plex&logoColor=white"> and type and run the following command (individually):
+## The Quest for Insights 🌐
 
- -       pip install pandas
-       
- -       pip install numpy  
-  
- -       pip install seaborn
- 
- -       pip install plotly
-     
- -       pip install jupyterthemes
- 
- -       pip install seaborn
- 
- -       pip install --upgrade pip
- 
- -       pip install xgboost
+### Data Source 📊
 
-Once Installed now we can import it inside our python code.
+So, picture this: I stumbled upon this treasure trove of data from "Hospital Universitario de Caracas" in Caracas, Venezuela. It's like finding a rare Pokémon card in a dusty old box – exciting stuff! 🎮
 
----
+The dataset includes features like:
+- **Number of Pregnancies**: Because, well, life begins there! 🤰
+- **Smoking Habits**: Puff, puff, pass... the data, of course! 🚬
+- **Sexually Transmitted Disease (STD)**: Not the kind of STD you're thinking about – it's all about data hygiene here! 🦠
+- **Demographics**: Age, education, and other cool stuff. 🕶️
+- **Historic Medical Records**: The patient's past – like a codebase with commit history! 📜
 
-## Frequently asked questions ❔
+### Data Wrangling 🧹
 
-### How can I thank you for writing and sharing this tutorial? 🌷
+First, I had to clean up the data. Imagine untangling a bunch of headphone wires – that's what I did. Removed duplicates, handled missing values, and made sure everything played nicely together. 🎧
 
-You can <img src="https://img.shields.io/static/v1?label=%E2%AD%90 Star &message=if%20useful&style=style=flat&color=blue" alt="Star Badge"/> and <img src="https://img.shields.io/static/v1?label=%E2%B5%96 Fork &message=if%20useful&style=style=flat&color=blue" alt="Fork Badge"/> Starring and Forking is free for you, but it tells me and other people that it was helpful and you like this tutorial.
+### Splitting the Gang 👥
 
-Go [**`here`**](https://github.com/milaan9/93_Python_Data_Analytics_Projects) if you aren't here already and click ➞ **`✰ Star`** and **`ⵖ Fork`** button in the top right corner. You'll be asked to create a GitHub account if you don't already have one.
+Next, I divided the dataset into two squads:
+- **Training Team**: These data points are like my loyal sidekicks. They'll help me train our model. 💪
+- **Test Team**: These guys are my secret agents. They'll test the model's mettle. 🕵️‍♂️
 
----
+## The Magic Potion: XG-Boost 🪄
 
-### How can I read this tutorial without an Internet connection? <img alt="GIF" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/hmm.gif" width="20vw" />
+I brewed up an XG-Boost potion – a powerful elixir for classification tasks. It's like Red Bull for algorithms – gives 'em wings! 🚀
 
-1. Go [**`here`**](https://github.com/milaan9/93_Python_Data_Analytics_Projects) and click the big green ➞ **`Code`** button in the top right of the page, then click ➞ [**`Download ZIP`**](https://github.com/milaan9/93_Python_Data_Analytics_Projects/archive/refs/heads/main.zip).
+### Training the Model 🤖
 
-    ![Download ZIP](https://github.com/milaan9/93_Python_Data_Analytics_Projects/blob/main/img/dnld_rep.png)
+I fed the training team to the XG-Boost dragon. It learned patterns, tweaked its weights, and became smarter than my AI ethics textbook. 📚
 
-2. Extract the ZIP and open it. Unfortunately I don't have any more specific instructions because how exactly this is done depends on which operating system you run.
-    
-3. Launch ipython notebook from the folder which contains the notebooks. Open each one of them
-  
-    `Kernel > Restart & Clear Output`
-    
-This will clear all the outputs and now you can understand each statement and learn interactively.
+### Accuracy Spell ✨
 
-If you have git and you know how to use it, you can also clone the repository instead of downloading a zip and extracting it. An advantage with doing it this way is that you don't need to download the whole tutorial again to get the latest version of it, all you need to do is to pull with git and run ipython notebook again.
+The moment of truth! Drumroll, please... 🥁
+
+- **Training Dataset Accuracy**: 99.562% (Whoa, overachiever!)
+- **Test Dataset Accuracy**: 95.348% (Pretty darn good!)
+
+## Conclusion 🎉
+
+So, there you have it – our trusty model can predict cervical cancer risk better than a fortune teller with a crystal ball. 🌟
+
+Keep coding, stay caffeinated, and remember: Life is like a nested loop – sometimes you break out, and sometimes you just keep iterating! 🤓💻
 
 ---
 
+Feel free to ask any questions or share your thoughts. And hey, if you find a bug in the universe, let me know – we'll debug it together! 🐞✨
