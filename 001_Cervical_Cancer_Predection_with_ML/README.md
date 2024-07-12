@@ -1,6 +1,3 @@
-Ah, got it! You want me to trim down the unnecessary stuff and give it that "college student in the final year" vibe. I'm on it! 🎓
-
----
 
 # Cervical Cancer Prediction with Machine Learning 🌟
 
